@@ -3,7 +3,7 @@ function verifiqueValidade() {
     var senha = inSenha.value;
     var tam = senha.length;
     if (senha == Number(senha) || senha == "") {
-        alert("NÃAAAAO! Você não pode criar uma senha assim mano... \nQuer ser hackeado seu paçoca!?" );
+        alert("Insira valores válidos no campo.");
         inSenha.value = "";
         inSenha.focus();
         return;

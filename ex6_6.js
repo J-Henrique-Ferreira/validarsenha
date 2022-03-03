@@ -29,7 +29,7 @@ function verifiqueValidade() {
             inSenha.focus();
             break;
         }
-        if (letras_A < 2) {
+        if (letras_A == null) {
             alert("Por segurança adicione no mínimo 2 letras maiúsculas.");
             validade = false;
             inSenha.focus();

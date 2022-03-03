@@ -59,6 +59,13 @@ article {
     font-weight: 100; 
 }
 
+#outSenha {
+    font-family: monospace;
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
 @media (max-width: 830px) {
     
 .sectOne p {

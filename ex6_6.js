@@ -1,7 +1,7 @@
 function verifiqueValidade() {
     var inSenha = document.getElementById("inSenha");
     var senha = inSenha.value;
-    var tam = senha.length;
+
     if (senha == Number(senha) || senha == "") {
         alert("Insira valores válidos no campo.");
         inSenha.value = "";
@@ -29,7 +29,7 @@ function verifiqueValidade() {
             inSenha.focus();
             break;
         }
-        if (letras_A == null) {
+        if (letras_A < 2) {
             alert("Por segurança adicione no mínimo 2 letras maiúsculas.");
             validade = false;
             inSenha.focus();
@@ -53,8 +53,10 @@ function verifiqueValidade() {
     } else {
         validade = "SENHA VULNERÁVEL";
     }
-   
+   var copiaSenha = senha;
     document.getElementById("outValidade").textContent = validade;
+    document.getElementById("outSenha").textContent = copiaSenha;
+    
 }
 var btVerificar = document.getElementById("btVerificar");
 btVerificar.addEventListener("click", verifiqueValidade);
